@@ -1,0 +1,8 @@
+site_name: 我的 CS 学习笔记
+theme:
+  name: material  # 强烈推荐
+
+nav:
+  - 首页: index.md
+  - CS61A:
+      - 笔记1: cs61a/note1.md
