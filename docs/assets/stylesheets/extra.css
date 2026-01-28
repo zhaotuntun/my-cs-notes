@@ -1,0 +1,59 @@
+/* 首页视觉增强：保持轻量，不做模板覆盖 */
+
+.home-hero {
+  padding: 2.25rem 0 1.25rem;
+}
+
+.home-hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  letter-spacing: -0.02em;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.home-card {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: linear-gradient(
+      180deg,
+      var(--md-default-bg-color),
+      var(--md-default-bg-color)
+    )
+    padding-box;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+
+.home-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.home-card .title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.home-card .desc {
+  opacity: 0.85;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+

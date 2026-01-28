@@ -1,15 +1,71 @@
 site_name: 朝暾的 CS 学习笔记
+site_description: 记录我的计算机学习之路：课程/专题优先，博客随记补充。
+
 theme:
-  name: material  # 强烈推荐
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色模式
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 nav:
-  - 首页: index.md
-  - vibe-coding:
-      - 介绍: vibe_coding/intro.md
-      - 安装指南: vibe_coding/installation.md
-      - 基础教程: vibe_coding/basic_tutorial.md
-      - 进阶教程: vibe_coding/advanced_tutorial.md
+  - 主页:
+      - 首页: index.md
+      - 最近更新: recent.md
+      - 标签: tags.md
   - 公开课:
+      - 总览: public_courses/index.md
       - 计算机网络: public_courses/computer_networks.md
       - 操作系统: public_courses/operating_systems.md
       - 数据结构与算法: public_courses/data_structures_algorithms.md
+  - 工具:
+      - 总览: tools/index.md
+      - Git: tools/git.md
+      - Linux: tools/linux.md
+  - 语言:
+      - 总览: languages/index.md
+      - C/C++: languages/cpp.md
+      - Python: languages/python.md
+      - Rust: languages/rust.md
+  - 杂项:
+      - 总览: misc/index.md
+      - 随记: misc/notes.md
+  - 其他:
+      - 总览: others/index.md
