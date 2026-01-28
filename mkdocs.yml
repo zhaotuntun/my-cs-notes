@@ -4,5 +4,6 @@ theme:
 
 nav:
   - 首页: index.md
-  - CS61A:
-      - 笔记1: cs61a/note1.md
+  - vibe-coding:
+  - 公开课:
+      - cs61a
